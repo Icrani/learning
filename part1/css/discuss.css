@@ -1,0 +1,51 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#whole {
+    margin-top: 5px;
+    width: 1000px;
+    height: 400px;
+    background-color: #dbf2fe;
+}
+
+.top {
+    width: 980px;
+    margin-left: 10px;
+    float: left;
+}
+
+.media-body {
+    font-size: small;
+}
+
+.blue {
+    color: #0080e1;
+}
+
+.far {
+    font-size: small;
+    float: left;
+}
+
+.body {
+    float: left;
+    width: 1000px;
+    height: 200px;
+    background-color: #fdf1cb;
+}
+
+.content {
+    margin-top: 30px;
+    margin-left: 35px;
+}
+
+.txt_content {
+
+    padding-left: 20px;
+}
+
+.l_txt{
+    width: 760px;
+}

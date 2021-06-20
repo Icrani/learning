@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>课程管理</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.1.3/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/课程.css"/>
+    <script src="bootstrap-4.1.3/js/jquery.min.js"></script>
+    <script src="bootstrap-4.1.3/js/popper.min.js"></script>
+    <script src="bootstrap-4.1.3/js/bootstrap.js"></script>
+    <style>
+        .tb2 td {
+				width: 30px;
+        }
+
+        .back{
+            width: 1055px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="top-1">
+        <div class="md"><p>游戏化学习资源应用培训班</p></div>
+        <div class="md mi">我能管理的
+            <input type="submit" class="btn" value="班级列表"/>
+            <input type="submit" class="btn" value="学员分组"/>
+            <input type="submit" class="btn" value="课程管理" style="background-color: #CCE5FF;"/>
+            <input type="submit" class="btn" value="发布通知"/>
+            <a href="./create.html"><input type="submit" class="btn" value="创建课程"/></a>
+            <input type="submit" class="btn" value="评议管理"/>
+        </div>
+    </div>
+    <div style="margin-bottom: 10px;">课程列表</div>
+    <div class="back"></div>
+    <table class="table-1">
+        <tr class="tb2">
+            <td>课程名称</td>
+            <td>类别</td>
+            <td>课程状态</td>
+            <td>学员人数</td>
+            <td>管理功能</td>
+        </tr>
+        <tr>
+            <td><a href="./.html" style="color: black"><img src="img/1.png"><span style="margin-left: 10px;">游戏化学习...</span></a></td>
+            <td><p class="te">教研员培训</p></td>
+            <td>
+                <select class="form-control te">
+                    <option>开放</option>
+                    <option>关闭</option>
+                </select>
+            </td>
+            <td><p class="te">52</p></td>
+            <td><p class="te"><a href="./checkwork.html">批改作业</a>&nbsp;&nbsp;&nbsp;<a href="">发布资料</a>&nbsp;&nbsp;&nbsp;
+                <a href="">讨论管理</a>&nbsp;&nbsp;&nbsp;<a href="">调查结果</a>&nbsp;&nbsp;&nbsp;<a href="">测试结果</a></p>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+#whole {
+    width: 830px;
+    height: 600px;
+
+}
+
+.top {
+    width: 760px;
+    height: 180px;
+    color: #6f6b69;
+    border-bottom: #c6c8ca solid 1px;
+}
+
+.class_tophole {
+    width: 760px;
+    height: 30px;
+    float: left;
+    color: #5c5c5c;
+    background-color: #f9f9f9;
+    border-top: #f0f0f0 solid 1px;;
+    border-bottom: #f0f0f0 solid 1px;;
+}
+
+.var_list_hole {
+    float: left;
+    margin-left: 60px;
+}
+
+.var_list {
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-left: #f0f0f0 solid 1px;
+    border-right: #f0f0f0 solid 1px;
+}
+
+.var_list_hole img {
+    padding-left: 5px;
+    width: 55px;
+    float: left;
+}
+
+.class_tophole_new {
+    border: none;
+    text-align: center;
+    height: 50px;
+    color: #717171;
+    font-size: x-small;
+    background-color: white;
+}
+
+.var_list_hole_new {
+    margin-left: 0;
+}
+
+.var_list_new {
+    border: none;
+    line-height: 50px;
+}
+
+.btn-success {
+    height: 35px;
+    line-height: 28px;
+}
+
+a {
+    color: #647a90;
+}
+
+.body {
+    float: left;
+    margin-left: 35px;
+    width: 760px;
+}
+
+.body_left {
+    margin-top: 13px;
+    float: left;
+    height: 51px;
+}
+
+.top_blue {
+    float: left;
+    width: 380px;
+    height: 5px;
+    background-color: #4f93c4;
+}
+
+.boder_left {
+    border-bottom: #e9eaec solid 1px;
+    border-right: #e9eaec solid 1px;
+}
+
+.body_left_body {
+    height: 390px;
+    margin-left: 29px;
+    float: left;
+}
+
+.boder_right {
+    border-bottom: #e9eaec solid 1px;
+    border-left: #e9eaec solid 1px;
+}
+
+.body_title {
+    width: 380px;
+    height: 50px;
+}
+
+.body_title_txt {
+    width: 380px;
+    line-height: 45px;
+    padding-left: 15px;
+    height: 50px
+}
+
+.name {
+    width: 350px;
+    height: 70px;
+    padding-left: 15px;
+}
+
+.name dt {
+    font-size: small;
+    color: #676767;
+}
+
+.name dd {
+    float: left;
+    width: 67px;
+    height: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.body_right {
+    float: left;
+    width: 372px;
+    height: 430px;
+    margin-top: 13px;
+    margin-left: 8px;
+}
+
+.body_right_inform {
+    width: 372px;
+    height: 225px;
+}
+
+.body_inform_body {
+    width: 380px;
+    height: 175px;
+}
+
+.pat {
+    margin-left: 25px;
+}
+
+.pat li {
+    padding-top: 10px;
+    height: 30px;
+}
+
+.study {
+    width: 364px;
+}
+
+.btn-success a {
+    color: white;
+}

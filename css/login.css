@@ -1,0 +1,23 @@
+* {
+    margin: 0 auto;
+    padding: 0 ;
+}
+
+body {
+    width: auto;
+    height: 750px;
+    background-image: url("../part1/images/login-bg.jpg");
+}
+
+.fon {
+    font-size: small;
+    height: 50px;
+    line-height: 50px;
+
+}
+
+.login_body {
+    width: 440px;
+    height: 450px;
+    background: white;
+}

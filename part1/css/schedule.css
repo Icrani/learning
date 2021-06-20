@@ -1,0 +1,154 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#whole {
+    width: 967px;
+    height: 855px;
+    background-color: #f0fafc;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1b1e21;
+    text-decoration: none;
+}
+
+.whole_part {
+    margin-left: 8px;
+}
+
+.top {
+    width: 950px;
+    height: 90px;
+    float: left;
+    margin-top: 5px;
+    background-color: #eaf7ff;
+}
+
+.top_title {
+    height: 90px;
+    line-height: 92px;
+    font-size: x-large;
+    margin-left: 20px;
+}
+
+.top_right {
+    width: 465px;
+    height: 55px;
+    margin-top: 14px;
+    margin-right: 10px;
+    background-color: white;
+    border: #cedae0 solid 1px;
+}
+
+.top_right_list {
+    height: 55px;
+    width: 140px;
+    line-height: 55px;
+    text-align: center;
+}
+
+.body {
+    float: left;
+    width: 950px;
+    height: 750px;
+    margin-top: 5px;
+    border-top: #cad4dc solid 2px;
+    border-left: #cad4dc solid 1px;
+    border-right: #cad4dc solid 1px;
+    background-color: white;
+}
+
+.body_left {
+    width: 670px;
+    height: 630px;
+}
+
+.body_left_title {
+    width: 670px;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    border-bottom: #cad4dc solid 1px;
+}
+
+.classname {
+    width: 670px;
+    font-size: small;
+}
+
+.grey {
+    width: 670px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    background-color: #eeeeee;
+}
+
+.grey_list {
+    width: 670px;
+    height: 55px;
+    line-height: 55px;
+    float: left;
+    padding-left: 70px;
+    border-bottom: #cad4dc dashed 1px;
+}
+
+.grey_list span {
+    float: left;
+}
+
+.graaa {
+    color: #999999;
+}
+
+.gra {
+    color: #c7c7c7;
+}
+
+.body_right {
+    width: 210px;
+    height: 640px;
+    margin-top: 15px;
+    margin-left: 33px;
+    border: #c4d0da solid 1px;
+}
+
+.right_title {
+    width: 210px;
+    height: 30px;
+    float: left;
+    border: #c4d0da solid 1px;
+    background-color: #f0f7fe;
+}
+
+.right_body {
+    width: 210px;
+    height: 213px;
+    border-bottom: #c4d0da solid 1px;
+}
+
+.demod {
+    padding-left: 25px;
+}
+
+.demod a {
+    color: black;
+}
+
+.demod li {
+    height: 30px;
+}
+
+.score {
+    margin-left: 20px;
+    width: 180px;
+    height: 80px;
+    float: left;
+}

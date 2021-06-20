@@ -1,0 +1,65 @@
+.backcolor{
+	background-color: aliceblue;
+}
+.backcolor-1{
+	background-color: #CCE5FF;
+}
+.tablebc{
+	background-color: white;
+}
+.table{
+	text-align: center;
+}
+.tablesize{
+	width: 80%;
+	margin-left: 10%;
+}
+.tablesize-1{
+	background-color: white;
+	width: 115%;
+	margin-left: 5px;
+	border: 2px solid #BEE5EB;
+	border-collapse:collapse;
+}
+.tb{
+	background-color: aliceblue;
+}
+.top{
+	font-weight: bold;
+}
+.top span{
+	font-size:16px;
+	font-weight: normal;
+	float: right;
+	margin-top: 15px;
+}
+.textsty{
+	color: #0056B3;
+	text-align: start;
+	font-weight: bold;
+}
+.rightbox{
+	background-color: white;
+	width: 72%;
+	border-top: 2px solid #BEE5EB;
+	border-left: 2px solid #BEE5EB;
+	border-bottom: 2px solid #BEE5EB;
+	float: right;
+}
+.rightbox p{
+	margin-left: 5%;
+	margin-top: 8%;
+}
+.rightbox2{
+	background-color: white;
+	width: 72%;
+	border-top: 2px solid #BEE5EB;
+	border-left: 2px solid #BEE5EB;
+	border-bottom: 2px solid #BEE5EB;
+	float: right;
+	margin-top: 12px;
+}
+.rightbox2 p{
+	margin-left: 5%;
+	margin-top: 5%;
+}

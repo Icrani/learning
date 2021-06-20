@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录</title>
+    <link rel="stylesheet" href="part1/css/bootstrap-4.1.3/css/bootstrap.css">
+    <script src="part1/css/bootstrap-4.1.3/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="part1/css/bootstrap-4.1.3/js/popper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="part1/css/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="container ">
+    <div class="row">
+        <div class="login_body form-control   mt-5">
+            <div class="pl-4 py-3 border-bottom">
+                <b>欢迎登录</b>
+            </div>
+            <br>
+            <!--       输入账号密码-->
+            <div>
+                <form>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#user_name">用户名登录</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#phone">手机号登录</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#email">邮箱登录</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="user_name" class="container tab-pane active"><br>
+                            <div class="form-group">
+                                <input type="text" class="form-control mt-4" id="username" name="usrname"
+                                       placeholder="请输入用户名">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control mt-5" id="password" name="pwdname"
+                                       placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div id="phone" class="container tab-pane "><br>
+                            <div class="form-group">
+                                <input type="text" class="form-control mt-4" value="" name="usrphone" placeholder="请输入手机号">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control mt-5" value="" id="pwdphone" placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div id="email" class="container tab-pane "><br>
+                            <div class="form-group">
+                                <input type="text" class="form-control mt-4" name="usremail" placeholder="请输入邮箱">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control mt-5" name="pwdemail" placeholder="请输入密码">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!--            自动登录-->
+            <div class="col-12  fon">
+                <div class="float-left ">
+                    <div class="float-left" style="padding-top: 2px">
+                        <input type="checkbox" checked="checked">&nbsp;
+                    </div>
+                    <div class="float-left pb-3">自动登录</div>
+
+                </div>
+                <div class="ml-auto float-right">
+                    <a href="part1/index.html">
+                        返回首页
+                    </a>
+                </div>
+                <div class="ml-auto float-right pr-1">
+                    <a href="#">
+                        忘记密码
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <input type="submit" id="login" class="btn-primary form-control" value="登录">
+                <a href="./part1/index.html"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var btn = document.querySelector('#login');
+    var un = document.querySelector('#username');
+    var pwd = document.querySelector('#password');
+
+
+    btn.addEventListener("click", function () {
+        var st = 'student'
+        var te = 'teacher'
+        var adm = 'admin'
+        if (un.value === st && pwd.value ===st) {
+            window.location.href = 'part1/index.html'
+        }else if (un.value === te && pwd.value ===te) {
+            window.location.href = 'part2/classmanage.html'
+        }else if (un.value === adm && pwd.value ===adm){
+            window.location.href = 'part3/administration.html'
+        }else {
+            alert('账号密码错误')
+        }
+    })
+</script>
+</html>

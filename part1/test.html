@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学习测试</title>
+    <link rel="stylesheet" href="./css/bootstrap-4.1.3/css/bootstrap.css">
+    <script src="./css/bootstrap-4.1.3/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./css/bootstrap-4.1.3/js/popper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./css/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        #whole {
+            width: 1000px;
+            height: 500px;
+        }
+
+        .body {
+            margin-top: 12px;
+            width: 800px;
+            height: 500px;
+            border: #dfe9ef solid 1px;
+        }
+
+        .question {
+            padding-left: 50px;
+            width: 880px;
+            height: 250px;
+            float: left;
+        }
+
+        .title {
+            width: 720px;
+            height: 35px;
+            line-height: 35px;
+        }
+
+        .answer {
+            margin-left: 70px;
+        }
+
+        .blue_color {
+            color: #1c18b4;
+        }
+
+        .red_color {
+            color: #c82333;
+        }
+
+    </style>
+</head>
+<body>
+<div id="whole">
+    <div class="body">
+        <div class="question">
+            <div class="title">
+                <p><b>问题 1：</b>下列那些软件可以用来制作多媒体课件</p>
+                <span class="float-right pr-5">
+                    <span>题型：复选 &nbsp; 分数：4</span>
+                    <br>
+                    <span id="score1" class="red_color float-right">得分：&nbsp;&nbsp;</span>
+                </span>
+            </div>
+            <div class="answer">
+                <input type="checkbox" id="checkbox1" name="answer1" value="1">
+                <label id="question_answer1" for="checkbox1">Flash</label>
+                <br>
+                <input type="checkbox" id="checkbox2" name="answer1" value="1">
+                <label id="question_answer2" for="checkbox2">PowerPoint</label>
+                <br>
+                <input type="checkbox" id="checkbox3" name="answer1" value="0">
+                <label id="question_answer3" for="checkbox3">Fireworks</label>
+                <br>
+                <input type="checkbox" id="checkbox4" name="answer1" value="1">
+                <label id="question_answer4" for="checkbox4">电子白板软件</label>
+                <br>
+
+                <input type="button" name="question1" class="btn btn-primary" id="question1" value="提交">
+            </div>
+        </div>
+
+
+        <div class="question">
+            <div class="title">
+                <p><b>问题 2：</b>下列属于图片文件格式的有？</p>
+                <span class="float-right pr-5">
+                    <span>题型：复选 &nbsp; 分数：4</span>
+                    <br>
+                    <span id="score2" class="red_color float-right">得分：&nbsp;&nbsp;</span>
+                </span>
+            </div>
+            <div class="answer">
+                <input type="checkbox" id="checkbox5" name="answer2" value="0">
+                <label id="question_answer5" for="checkbox5">AVI</label>
+                <br>
+                <input type="checkbox" id="checkbox6" name="answer2" value="1">
+                <label id="question_answer6" for="checkbox6">JPEG/JPG</label>
+                <br>
+                <input type="checkbox" id="checkbox7" name="answer2" value="1">
+                <label id="question_answer7" for="checkbox7">GIF</label>
+                <br>
+                <input type="checkbox" id="checkbox8" name="answer2" value="1">
+                <label id="question_answer8" for="checkbox8">BMP</label>
+                <br>
+
+                <input type="button" name="question2" class="btn btn-primary" id="question2" value="提交">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $("input#question1").one("click", function () {
+
+        let score = 0;
+        const chk_value = [];
+        $('input[name="answer1"]:checked').each(function () {
+            chk_value.push($(this).val());
+        })
+
+        for (let i = 0; i < chk_value.length; i++) {
+            score = score + parseInt(chk_value[i]);
+        }
+
+        if (score === 3) {
+            score = 4;
+            $("span#score1").replaceWith("<span id=\"score1\" class=\"red_color float-right\">得分："+score+"</span>");
+        } else {
+            $("span#score1").replaceWith("<span id=\"score1\" class=\"red_color float-right\">得分："+score+"</span>");
+        }
+
+
+        $("input[name='question1']").prop("disabled", true);
+
+        if ($("input#checkbox1:checked")) {
+
+            $("input#checkbox1").prop("disabled", true);
+
+            $("#question_answer1").replaceWith("<label id=\"question_answer1\">Flash</label><span class='blue_color'>（正确答案）</span>")
+        } else {
+            $("input#checkbox1").prop("disabled", true);
+            $("#question_answer1").replaceWith("<label id=\"question_answer1\">Flash</label><span class='red_color'>（正确答案）</span>")
+        }
+
+        if ($("input#checkbox2:checked")) {
+            $("input#checkbox2").prop("disabled", true);
+            $("#question_answer2").replaceWith("<label id=\"question_answer2\">PowerPoint</label><span class='blue_color'>（正确答案）</span>")
+        } else {
+            $("input#checkbox2").prop("disabled", true);
+            $("#question_answer2").replaceWith("<label id=\"question_answer2\">PowerPoint</label><span class='red_color'>（正确答案）</span>")
+        }
+
+        if ($("input#checkbox3:checked")) {
+            $("input#checkbox3").prop("disabled", true);
+            $("#question_answer3").replaceWith("<label id=\"question_answer3\">PowerPoint</label><span class='red_color'>（错误答案）</span>")
+        } else {
+            $("input#checkbox3").prop("disabled", true);
+        }
+
+        if ($("input#checkbox4:checked")) {
+            $("input#checkbox4").prop("disabled", true);
+            $("#question_answer4").replaceWith("<label id=\"question_answer4\">PowerPoint</label><span class='blue_color'>（正确答案）</span>")
+        } else {
+            $("input#checkbox4").prop("disabled", true);
+            $("#question_answer4").replaceWith("<label id=\"question_answer4\">PowerPoint</label><span class='red_color'>（正确答案）</span>")
+        }
+
+    })
+
+    $("input#question2").one("click", function () {
+
+        let score = 0;
+        const chk_value = [];
+        $('input[name="answer2"]:checked').each(function () {
+            chk_value.push($(this).val());
+        })
+
+        for (let i = 0; i < chk_value.length; i++) {
+            score = score + parseInt(chk_value[i]);
+        }
+
+        if (score === 3) {
+            score = 4;
+            $("span#score2").replaceWith("<span id=\"score2\" class=\"red_color float-right\">得分："+score+"</span>");
+        } else {
+            $("span#score2").replaceWith("<span id=\"score2\" class=\"red_color float-right\">得分："+score+"</span>");
+        }
+
+
+
+        $("input[name='question2']").prop("disabled", true);
+
+        if ($("input#checkbox7:checked")) {
+
+            $("input#checkbox7").prop("disabled", true);
+
+            $("#question_answer7").replaceWith("<label id=\"question_answer7\">GIF</label><span class='blue_color'>（正确答案）</span>")
+        } else {
+            $("input#checkbox7").prop("disabled", true);
+            $("#question_answer7").replaceWith("<label id=\"question_answer7\">GIF</label><span class='red_color'>（正确答案）</span>")
+        }
+
+        if ($("input#checkbox6:checked")) {
+            $("input#checkbox6").prop("disabled", true);
+            $("#question_answer6").replaceWith("<label id=\"question_answer6\">JPEG/JPG</label><span class='blue_color'>（正确答案）</span>")
+        } else {
+            $("input#checkbox6").prop("disabled", true);
+            $("#question_answer6").replaceWith("<label id=\"question_answer6\">JPEG/JPG</label><span class='red_color'>（正确答案）</span>")
+        }
+
+        if ($("input#checkbox5:checked")) {
+            $("input#checkbox5").prop("disabled", true);
+            $("#question_answer5").replaceWith("<label id=\"question_answer5\">AVI</label><span class='red_color'>（错误答案）</span>")
+        } else {
+            $("input#checkbox5").prop("disabled", true);
+        }
+
+        if ($("input#checkbox8:checked")) {
+            $("input#checkbox8").prop("disabled", true);
+            $("#question_answer8").replaceWith("<label id=\"question_answer8\">BMP</label><span class='blue_color'>（正确答案）</span>")
+        } else {
+            $("input#checkbox8").prop("disabled", true);
+            $("#question_answer8").replaceWith("<label id=\"question_answer8\">BMP</label><span class='red_color'>（正确答案）</span>")
+        }
+
+    })
+
+
+</script>
+
+</body>
+</html>

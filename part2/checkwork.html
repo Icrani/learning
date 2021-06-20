@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>课程内容</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.1.3/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/课程内容.css"/>
+    <script src="bootstrap-4.1.3/js/jquery.min.js"></script>
+    <script src="bootstrap-4.1.3/js/popper.min.js"></script>
+    <script src="bootstrap-4.1.3/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="back">
+        <ul class="nav nav-tabs base">
+            <li style="background-color: lightblue;"><a class="nav-link" data-toggle="tab" href="#menu1">批改作业</a></li>
+            <li><a class="nav-link" data-toggle="tab" href="#menu2">发布资料</a></li>
+            <li><a class="nav-link" data-toggle="tab" href="#menu3">讨论管理</a></li>
+            <li><a class="nav-link" data-toggle="tab" href="#menu4">调查结果</a></li>
+            <li><a class="nav-link" data-toggle="tab" href="#menu5">测试结果</a></li>
+            <a href="./classmanage.html"><input type="submit" class="btn ip" value="返回列表" style="background-color: lightblue;"/></a>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane container" id="menu1">
+            <table class="table">
+                <tr>
+                    <td colspan="4" style="color: #17A2B8;text-align: left;">未批改作业：（8人）</td>
+                    <td colspan="1" style="color: #17A2B8;float: right;">批量下载学员作业</td>
+                </tr>
+                <tr class="tb">
+                    <td>用户名</td>
+                    <td>上交时间</td>
+                    <td>上交形式</td>
+                    <td>上交附件</td>
+                    <td>操作</td>
+                </tr>
+                <tr>
+                    <td>王燕</td>
+                    <td>2017/06/29</td>
+                    <td>上传附件</td>
+                    <td style="color: #17A2B8;">61-117927</td>
+                    <td>查看评论</td>
+                </tr>
+                <tr>
+                    <td>吴美</td>
+                    <td>2017/06/30</td>
+                    <td>上传附件</td>
+                    <td style="color: #17A2B8;">61-117947</td>
+                    <td>查看评论</td>
+                </tr>
+                <tr>
+                    <td>刘钰浩</td>
+                    <td>2017/06/0</td>
+                    <td>上传附件</td>
+                    <td style="color: #17A2B8;">61-117907</td>
+                    <td>查看评论</td>
+                </tr>
+                <tr>
+                    <td>田杨</td>
+                    <td>2017/05/32</td>
+                    <td>上传附件</td>
+                    <td style="color: #17A2B8;">61-117888</td>
+                    <td>查看评论</td>
+                </tr>
+            </table>
+            <table class="table" style="border: hidden;">
+                <tr>
+                    <td colspan="4" style="color: #17A2B8;text-align: left">已批改作业：（26人）</td>
+                </tr>
+                <tr class="tb">
+                    <td>用户名</td>
+                    <td>上交时间</td>
+                    <td>上交形式</td>
+                    <td>任务附件</td>
+                    <td>批改时间</td>
+                    <td style="text-decoration: underline;">作业得分&uarr;</td>
+                    <td>操作</td>
+                </tr>
+                <tr>
+                    <td>崔若凡</td>
+                    <td>2017/05/30</td>
+                    <td>上传附件</td>
+                    <td style="color: #17A2B8;">61-117887</td>
+                    <td>2017/05/31</td>
+                    <td>10</td>
+                    <td>重新评分</td>
+                </tr>
+                <tr>
+                    <td>彭金明</td>
+                    <td>2017/05/25</td>
+                    <td>上传附件</td>
+                    <td style="color: #17A2B8;">61-117833</td>
+                    <td>2017/05/31</td>
+                    <td>15</td>
+                    <td>重新评分</td>
+                </tr>
+                <tr>
+                    <td>赖研</td>
+                    <td>2017/05/27</td>
+                    <td>上传附件</td>
+                    <td style="color: #17A2B8;">61-1178850</td>
+                    <td>2017/05/31</td>
+                    <td>18</td>
+                    <td>重新评分</td>
+                </tr>
+                <tr>
+                    <td>游红梅</td>
+                    <td>2017/05/27</td>
+                    <td>上传附件</td>
+                    <td style="color: #17A2B8;">61-117849</td>
+                    <td>2017/05/31</td>
+                    <td>18</td>
+                    <td>重新评分</td>
+                </tr>
+                <tr>
+                    <td>龚斌</td>
+                    <td>2017/05/230</td>
+                    <td>上传附件</td>
+                    <td style="color: #17A2B8;">61-117829</td>
+                    <td>2017/05/31</td>
+                    <td>18</td>
+                    <td>重新评分</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tab-pane container" id="menu2">
+            <table class="table">
+                <tr class="tb">
+                    <td style="border-right: double white;">序号</td>
+                    <td style="border-right: double white;">内容名称</td>
+                    <td style="border-right: double white;">内容类型</td>
+                    <td style="border-right: double white;">所属单元</td>
+                    <td style="border-right: double white;">当前资料数</td>
+                    <td>操作</td>
+                </tr>
+                <tr>
+                    <td>61-2226</td>
+                    <td>游戏化学习相关学习资料</td>
+                    <td>学习资料</td>
+                    <td>理论篇</td>
+                    <td>4</td>
+                    <td>发布资源</td>
+                </tr>
+                <tr>
+                    <td>61-2227</td>
+                    <td>关于游戏化应用情况的调查</td>
+                    <td>学习调查</td>
+                    <td>理论篇</td>
+                    <td>2</td>
+                    <td>发布调查</td>
+                </tr>
+                <tr>
+                    <td>61-2228</td>
+                    <td>游戏化学习案例体验</td>
+                    <td>学习资料</td>
+                    <td>理论篇</td>
+                    <td>2</td>
+                    <td>发布资源</td>
+                </tr>
+                <tr>
+                    <td>61-2229</td>
+                    <td>游戏化学习心得分享</td>
+                    <td>学习讨论</td>
+                    <td>理论篇</td>
+                    <td>1</td>
+                    <td>发布讨论</td>
+                </tr>
+                <tr>
+                    <td>61-2230</td>
+                    <td>游戏化学习资源相关制作技术料</td>
+                    <td>学习资料</td>
+                    <td>技术篇</td>
+                    <td>6</td>
+                    <td>发布资源</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tab-pane container" id="menu3">
+            <table class="table">
+                <tr class="tb">
+                    <td style="border-right: double white;">序号</td>
+                    <td style="border-right: double white;">讨论名称</td>
+                    <td style="border-right: double white;">所属单元</td>
+                    <td style="border-right: double white;">访问次数</td>
+                    <td style="border-right: double white;">参与人数</td>
+                    <td>评分人数</td>
+                </tr>
+                <tr>
+                    <td>61-880</td>
+                    <td>游戏化学习对于学生学习的影响...</td>
+                    <td>理论篇</td>
+                    <td>161</td>
+                    <td>32</td>
+                    <td>18</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tab-pane container" id="menu4">
+            <table class="table">
+                <tr class="tb">
+                    <td style="border-right: double white;">序号</td>
+                    <td style="border-right: double white;">调查名称</td>
+                    <td style="border-right: double white;">所属单元</td>
+                    <td style="border-right: double white;">参与人数</td>
+                    <td>未参与人数</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>你在学科教学采用过哪些游戏化...</td>
+                    <td>理论篇</td>
+                    <td>46</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>你认为游戏化学习资源对学生学...</td>
+                    <td>理论篇</td>
+                    <td>47</td>
+                    <td>5</td>
+                </tr>
+            </table>
+        </div>
+        <div class="tab-pane container" id="menu5">
+            <table class="table">
+                <tr class="tb">
+                    <td style="border-right: double white;">序号</td>
+                    <td style="border-right: double white;">测试名称</td>
+                    <td style="border-right: double white;">所属单元</td>
+                    <td style="border-right: double white;">参与人数</td>
+                    <td style="border-right: double white;">未参与人数</td>
+                    <td>平均分</td>
+                </tr>
+                <tr>
+                    <td>61-743</td>
+                    <td>数字化教学资源的在线测试</td>
+                    <td>教学篇</td>
+                    <td>45</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

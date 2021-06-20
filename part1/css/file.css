@@ -1,0 +1,9 @@
+.top{
+	width: auto;
+	height: 20px;
+	background-color: powderblue;
+}
+.container{
+	margin-left: 1rem ;
+	padding: 0 20px;
+}

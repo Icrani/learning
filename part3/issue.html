@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布评议</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <style>
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="blue"></div>
+    <div class="container">
+        <h3><b>发布评议</b></h3>
+        <p>班级名称：游戏化学习资源应用培训班</p>
+    </div>
+</div>
+<hr/>
+<div class="container">
+    <form method="post">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><span class="text-danger">*</span>评议名称</span>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><span class="text-danger">*</span>评议学分</span>
+            </div>
+            <input type="text" class="form-control" placeholder="5">
+            <div class="input-group-append">
+                <span class="input-group-text">(整数)</span>
+            </div>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><span class="text-danger">*</span>开始时间</span>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text"><span class="text-danger">*</span>结束时间</span>
+            </div>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="d-flex justify-content-around">
+            <input type="submit" placeholder="提交" class="btn btn-success pl-3 pr-3"/>
+            <button class="btn btn-success pl-3 pr-3"><a href="./classmanagement.html">返回</a></button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
