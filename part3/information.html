@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布通知</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" href="css/课程.css">
+    <style>
+        a {
+            color: #1b1e21;
+        }
+
+        a:hover{
+            color: #1b1e21;
+            text-decoration: none;
+        }
+
+        .edit {
+            width: 1000px;
+            height: 465px;
+            font-size: 20px;
+        }
+
+        #title {
+            width: 600px;
+            margin-left: 65px;
+        }
+
+        #content {
+            width: 650px;
+            height: 300px;
+            margin-top: 30px;
+            margin-left: 65px;
+            overflow: hidden;
+        }
+
+        textarea {
+            margin-left: 65px;
+        }
+
+        .infor {
+            width: 400px;
+            height: 600px;
+            overflow: auto;
+        }
+
+        .infor li {
+            width: 400px;
+        }
+
+        .text_content {
+            font-size: 16px;
+        }
+
+        .text_content ul {
+            margin-left: 30px;
+        }
+
+        .text_content ul li {
+            width: 950px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .text_content span {
+            color: #9c9c9c;
+        }
+
+        .tiaozhuanye {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="blue"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="mt-3 float-left" style="margin-left: 30px">
+                <h3><b>发布消息</b></h3>
+
+            </div>
+            <div class="mt-3 float-right" style="margin-right: 30px">
+                <a href="./administration.html">
+                    <button class="btn btn-primary">返回</button>
+                </a>
+            </div>
+        </div>
+
+        <!--淡蓝色-->
+        <div class="back"></div>
+
+        <!--内容-->
+        <div class="">
+            <div class="edit ">
+                <div class="mt-4 ml-5">
+                    标题：
+                    <input type="text" id="title">
+                </div>
+
+                <div class="ml-5 mt-3">
+                    <span class="float-left">内容:</span>
+                    <textarea name="" id="content" cols="30" rows="10"></textarea>
+                    <a href="JavaScript:">
+                        <button class="btn btn-primary">确认发布</button>
+                    </a>
+                </div>
+
+                <hr style="width: 100%">
+
+                <div class="text_content">
+                    <ul>
+                        <li class="float-left">
+                            <div class="float-left">
+                                <a href="./details_news2.html">
+                                    制度治党、依规治党 习近平为新时代党内法规制度建设指明方向
+                                </a>
+                            </div>
+                            <div class="float-right">
+                                <span>2021-08-04</span>
+                            </div>
+                        </li>
+                        <li class="float-left">
+                            <div class="float-left">
+                                <a href="">
+                                    制度治党、依规治党 习近平为新时代党内法规制度建设指明方向
+                                </a>
+                            </div>
+                            <div class="float-right">
+                                <span>2021-08-04</span>
+                            </div>
+                        </li>
+                        <li class="float-left">
+                            <div class="float-left">
+                                <a href="">
+                                    制度治党、依规治党 习近平为新时代党内法规制度建设指明方向
+                                </a>
+                            </div>
+                            <div class="float-right">
+                                <span>2021-08-04</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="float-right tiaozhuanye" style="width: 670px;height: 30px">
+                    <div class="float-left">每页 <span><b>10</b></span> 记录&nbsp;&nbsp;&nbsp;</div>
+                    <div class="float-left">总共 <span><b>3</b></span> 记录&nbsp;&nbsp;&nbsp;</div>
+                    <div class="float-left"><a href="javascript:">第一页&nbsp;&nbsp;&nbsp;</a></div>
+                    <div class="float-left"><a href="javascript:"><< 上一页 &nbsp;&nbsp;&nbsp;</a></div>
+                    <div class="float-left"><a href="javascript:">下一页 >>&nbsp;&nbsp;&nbsp;</a></div>
+                    <div class="float-left"><a href="javascript:">尾页&nbsp;&nbsp;&nbsp;</a></div>
+                    <div class="float-left">页码 <span><b>1/1</b></span> &nbsp;&nbsp;&nbsp;</div>
+                    <input type="text" class="float-left" style="width: 30px;height: 25px">
+                    <div class="float-left"><a href="javascript:">&nbsp;&nbsp;&nbsp;跳转到</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -25,7 +25,7 @@ body {
 
 .list {
     width: 236px;
-    height: 263px;
+    height: 714px;
     float: left;
     background-color: white;
     border: #c6c8ca solid 1px;
@@ -191,12 +191,12 @@ body {
 
 .body_body_2 {
     width: 1024px;
-    height: 635px;
+    height: 673px;
     float: left;
     background-color: white;
 }
 
-#myclass{
+#myclassroom{
     width: 1024px;
     height: 720px;
     overflow: hidden;
@@ -204,4 +204,15 @@ body {
 
 .specialwid{
     width: 1024px;
+}
+
+.left-list{
+    height: 60px;
+}
+
+
+#myclass{
+    width: 1024px;
+    height: 720px;
+    overflow: hidden;
 }

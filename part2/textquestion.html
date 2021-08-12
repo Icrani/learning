@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情查看</title>
+    <link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap.css">
+    <link rel="stylesheet" href="css/课程内容.css"/>
+    <style>
+        .content {
+            width: 1126px;
+            height: 675px;
+        }
+
+        .active_color {
+            color: #4f93c4;
+        }
+
+        #menu1 {
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .title {
+            width: 1126px;
+            height: 100px;
+
+        }
+
+        .title h2, h4 {
+            line-height: 100px;
+        }
+
+        .question {
+            float: left;
+            width: 1125px;
+            height: 200px;
+            background-color: #ffffff;
+        }
+
+        .answer {
+            float: left;
+            width: 1125px;
+            height: 100px;
+            background-color: #ffffff;
+        }
+
+        .answer h4 {
+            color: #7b9e31;
+            margin-left: 20px;
+            margin-top: 20px;
+            line-height: 60px;
+        }
+
+        .answer h5 {
+            line-height: 100px;
+        }
+
+        .stu_answer {
+            line-height: 60px;
+            float: left;
+            width: 1125px;
+            height: 100px;
+            background-color: #ffffff;
+        }
+
+        .stu_answer h4 {
+            color: #7b9e31;
+        }
+
+        .stu_answer h5 {
+            line-height: 100px;
+        }
+
+        .score {
+            width: 1125px;
+            height: 165px;
+            background-color: #ffffff;
+            font-size: 18px;
+        }
+
+        .dafen {
+            width: 170px;
+            height: 82px;
+            margin-top: 45px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="back">
+        <ul class="nav nav-tabs base">
+            <li class="nav-item">
+                <a class="nav-link" href="#menu1"><span class="btnbtn">查看详情</span></a>
+            </li>
+            <li class="nav-item" style="margin-top: 0;margin-left: 900px;margin-right: 10px">
+                <a href="./checkthework.html">
+                    <input type="submit" style="width: 110px" class="btn ip" value="返回上级"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="content mt-3 border" style="margin-left: 50px">
+        <div class="tab-pane container content border" style="padding: 0" id="menu1">
+            <div class="title">
+                <h2 class="mr-2 ml-4 float-left" style="color: #7b9e31">1</h2>
+                <h4 class="ml-2 float-left">样式表定义#title {color:red} 表示（）。</h4>
+            </div>
+            <div class="question border-right border-top border-bottom float-left">
+                <div class="ml-5 pl-3 mt-3">
+                    <div>A. 网页中的标题是红色的</div>
+                    <br>
+                    <div>B. 网页中某一个id为title的元素中的内容是红色的</div>
+                    <br>
+                    <div>C. 网页中元素名为title的内容是红色的</div>
+                    <br>
+                    <div>D. 以上任意一个都可以</div>
+                </div>
+            </div>
+
+            <div class="answer border-right border-bottom float-left">
+                <h4 class="float-left">正确答案：</h4>
+                <span class="float-left"><h5>B</h5></span>
+            </div>
+
+            <div class="stu_answer border-right border-bottom float-left">
+                <h4 class="float-left ml-3">学生答案：</h4>
+                <span class="float-left"><h5>B</h5></span>
+            </div>
+
+            <div class="score float-left border-right">
+                <div class="float-left dafen ">
+                    <span >题目分值：<span>33</span>分</span><br>
+                    <span >
+                        打分：
+                        <input type="text" style="width: 60px;height: 40px">分
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/btn_select.js"></script>
+</html>

@@ -1,4 +1,3 @@
-
 * {
     margin: 0 auto;
     padding: 0;
@@ -6,6 +5,10 @@
 
 body {
     background-color: #f3f8fc;
+}
+
+li {
+    list-style: none;
 }
 
 #whole {
@@ -22,27 +25,33 @@ body {
     width: 1298px;
 }
 
+hr {
+    float: left;
+}
+
 .body_left {
     float: left;
     width: 240px;
+    height: 622px;
     border: #dfe6ec solid 2px;
     background-color: white;
 }
 
 .body_left_ul {
+    float: left;
     width: 238px;
-    height: 245px;
-
+    height: 626px;
 }
 
 .li {
     width: 218px;
-    height: 30px;
+    height: 50px;
     line-height: 30px;
     float: left;
     padding-left: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+
 }
 
 
@@ -59,7 +68,7 @@ body {
 }
 
 .body_right {
-    width: 1048px;
+    width: 1058px;
     height: 290px;
     float: left;
     background-color: white;
@@ -68,14 +77,14 @@ body {
 
 .body_right_title {
     float: left;
-    width: 780px;
+    width: 777px;
     height: 49px;
     line-height: 49px;
     border: #c6c8ca solid 1px;
 }
 
 .body_right_more {
-    width: 265px;
+    width: 275px;
     height: 49px;
     line-height: 49px;
     float: left;
@@ -92,7 +101,7 @@ body {
 
 .body_right_news {
     float: left;
-    width: 780px;
+    width: 777px;
     height: 238px;
     border-right: #c6c8ca solid 1px;
     border-bottom: #c6c8ca solid 1px;
@@ -177,7 +186,7 @@ body {
 
 
 .bottom {
-    width: 1048px;
+    width: 1058px;
     height: 331px;
     float: left;
     border: #c6c8ca solid 3px;
@@ -199,7 +208,7 @@ body {
     padding-left: 30px;
 }
 
-.sear a{
+.sear a {
     text-decoration: none;
     color: #657f95;
 }
@@ -224,7 +233,7 @@ body {
 
 .yel_3 {
     float: left;
-    width: 338px;
+    width: 348px;
     height: 52px;
     line-height: 52px;
     background-color: #edf8d0;
@@ -293,7 +302,7 @@ body {
 
 .whi_3 {
     float: left;
-    width: 338px;
+    width: 348px;
     height: 225px;
     border: #c6c8ca solid 1px;
 }
@@ -324,5 +333,14 @@ body {
 .cou_cla {
     height: 40px;
     line-height: 40px;
+}
+
+.body_right_more li {
+    width: 250px;
+    height: 35px;
+    line-height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 

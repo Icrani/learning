@@ -74,8 +74,8 @@
 
                 </div>
                 <div class="ml-auto float-right">
-                    <a href="part1/index.html">
-                        返回首页
+                    <a href="">
+                        修改密码
                     </a>
                 </div>
                 <div class="ml-auto float-right pr-1">
@@ -101,13 +101,15 @@
 
     btn.addEventListener("click", function () {
         var st = 'student'
-        var te = 'teacher'
-        var adm = 'admin'
+        // var te = 'teacher'
+        var adm = 'teacher'
         if (un.value === st && pwd.value ===st) {
             window.location.href = 'part1/index.html'
-        }else if (un.value === te && pwd.value ===te) {
+        }
+        /*else if (un.value === te && pwd.value ===te) {
             window.location.href = 'part2/classmanage.html'
-        }else if (un.value === adm && pwd.value ===adm){
+        }*/
+        else if (un.value === adm && pwd.value ===adm){
             window.location.href = 'part3/administration.html'
         }else {
             alert('账号密码错误')

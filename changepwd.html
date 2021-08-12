@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录</title>
+    <link rel="stylesheet" href="part1/css/bootstrap-4.1.3/css/bootstrap.css">
+    <script src="part1/css/bootstrap-4.1.3/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="part1/css/bootstrap-4.1.3/js/popper.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="part1/css/bootstrap-4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <style>
+        .buttongroup {
+            width: 414px;
+            height: 40px;
+            margin-top: 10px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container ">
+    <div class="row">
+        <div class="login_body form-control   mt-5">
+            <div class="pl-4 py-3 border-bottom">
+                <b>修改密码</b>
+            </div>
+            <div class="tab-content">
+                <div id="user_name" class="container tab-pane active"><br>
+                    <div class="form-group">
+                        <input type="text" class="form-control mt-3" id="username" name="usrname"
+                               placeholder="请输入用户名">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control mt-4" id="pwd" name="pwdname"
+                               placeholder="请输入密码">
+                    </div>
+                    <div class="form-group ">
+                        <input type="password" class="form-control mt-4 " id="repwd" name="pwdname"
+                               placeholder="确认密码">
+                    </div>
+                    <br>
+                    <div class="row buttongroup ">
+                        <button type="button" class="btn btn-success col-3 mx-3 ">确认修改</button>
+                        <button type="button" class="btn btn-info col-3 mx-3">清空重置</button>
+                        <button type="button" class="btn btn-primary col-3 ml-3"><a href="login.html">返回登录</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
