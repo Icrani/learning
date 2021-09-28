@@ -5,7 +5,7 @@
 
 #whole {
     width: 967px;
-    height: 855px;
+    height: 800px;
     background-color: #f0fafc;
 }
 
@@ -57,7 +57,7 @@ a:hover {
 .body {
     float: left;
     width: 950px;
-    height: 750px;
+    height: 690px;
     margin-top: 5px;
     border-top: #cad4dc solid 2px;
     border-left: #cad4dc solid 1px;

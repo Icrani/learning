@@ -46,16 +46,20 @@ a:hover {
     font-size: small;
 }
 
+.media h5 {
+    font-size: 17px;
+}
+
 .part {
     width: 326px;
     height: 206px;
 }
 
-.page{
+.page {
     width: 800px;
     margin-left: 170px;
 }
 
-.text1{
+.text1 {
     width: 50px;
 }

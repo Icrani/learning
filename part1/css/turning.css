@@ -1,6 +1,6 @@
 * {
     margin: 0 auto;
-    padding: 0 ;
+    padding: 0;
 }
 
 body {
@@ -11,13 +11,13 @@ body {
     width: 1260px;
 }
 
-#allindex{
+#allindex {
     width: 1024px;
     height: 720px;
     overflow: hidden;
 }
 
-.topbg{
+.topbg {
     width: 1260px;
     height: 30px;
     background-color: #4894cd;
@@ -97,15 +97,15 @@ body {
     height: 97px;
 }
 
-.classaction{
+.classaction {
     padding-left: 12px;
 }
 
-.classaction_middle{
+.classaction_middle {
     font-size: smaller;
 }
 
-.classaction_bottom{
+.classaction_bottom {
     font-size: smaller;
     color: gray;
 }
@@ -178,14 +178,14 @@ body {
     float: right;
 }
 
-.body_right_bottom_title{
+.body_right_bottom_title {
     width: 252px;
     height: 41px;
     float: left;
     border: #c6c8ca solid 1px;
 }
 
-.body_right_bottom_title div{
+.body_right_bottom_title div {
     line-height: 40px;
 }
 
@@ -196,22 +196,29 @@ body {
     background-color: white;
 }
 
-#myclassroom{
+.tab-content {
+    width: 1024px;
+    height: 673px;
+}
+
+#myclassroom {
     width: 1024px;
     height: 720px;
     overflow: hidden;
 }
 
-.specialwid{
+.specialwid {
     width: 1024px;
+    height: 636px;
+    overflow: hidden;
 }
 
-.left-list{
+.left-list {
     height: 60px;
 }
 
 
-#myclass{
+#myclass {
     width: 1024px;
     height: 720px;
     overflow: hidden;

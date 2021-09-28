@@ -9,7 +9,7 @@ body {
 
 #whole {
     width: 830px;
-    height: 600px;
+    height: 1000px;
 
 }
 
@@ -155,11 +155,12 @@ a {
 .body_right_inform {
     width: 372px;
     height: 225px;
+    margin-top: 5px;
 }
 
 .body_inform_body {
     width: 380px;
-    height: 175px;
+    height: 170px;
 }
 
 .pat {
@@ -168,13 +169,56 @@ a {
 
 .pat li {
     padding-top: 10px;
-    height: 30px;
+    height: 28px;
 }
 
 .study {
     width: 364px;
+    margin-top: 30px;
+    margin-left: 8px;
+    margin-bottom: 10px;
 }
 
 .btn-success a {
     color: white;
+}
+
+.pingyi {
+    width: 380px;
+    height: 235px;
+}
+
+.chengguo {
+    width: 380px;
+    height: 220px;
+}
+
+.jindu {
+    width: auto;
+    height: 50px;
+    border-top: #e9eaec solid 1px;
+}
+
+.whi_1_txt{
+    margin-top: 7px;
+    margin-left: 20px;
+    width: 250px;
+    height: auto;
+}
+
+.wh_1 {
+    padding-top: 3px;
+    margin-right: 8px;
+    float: left;
+    width: 104px;
+    height: 21px;
+    background-color: #f0f0f0;
+    float: right;
+}
+.ye_1 {
+    padding-top: 3px;
+    width: 33px;
+    height: 21px;
+    background-color: #ff9152;
+    float: right;
 }

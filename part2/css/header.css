@@ -1,0 +1,23 @@
+.fluid{
+	height: auto;
+	padding: 0.75rem 0.5rem;
+	box-shadow: 10px 10px 5px #888888;
+	background-image: linear-gradient(white,rgba(218,239,255,1));
+}
+p{
+	margin: 0;
+	padding-left: 0.5rem;
+}
+.blue{
+	height: 1rem;
+	background-color: #0062CC;
+}
+.table tr td{
+	border: none;
+}
+.none{width:200px; height: 30px;}
+select{width: 100px;height: 150px;} /*元素选择器*/
+input[type=button]{width: 50px;}  /*属性选择器*/
+#opt{margin: 20px 10px 0px;}       /*id选择器*/
+.box div{float: left;margin-top:10px ;}
+.mb-6{margin-bottom: 200px;}

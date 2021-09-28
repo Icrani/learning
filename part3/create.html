@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>创建班级</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-4.1.3/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../part2/css/基本信息.css"/>
+    <script src="../css/bootstrap-4.1.3/js/jquery.min.js"></script>
+    <script src="../css/bootstrap-4.1.3/js/popper.min.js"></script>
+    <script src="../css/bootstrap-4.1.3/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <h4>创建班级</h4>
+    </div>
+    <div class="back">
+        <ul class="nav nav-tabs base">
+            <li><a class="nav-link" data-toggle="tab" href="#menu1">基本信息</a></li>
+            <li><a class="nav-link" data-toggle="tab" href="#menu2">添加单元</a></li>
+            <li><a class="nav-link" data-toggle="tab" href="#menu3">添加内容</a></li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane container tc active show" id="menu1">
+            <table class="t1">
+                <tr style="height:80px">
+                    <td>课程名称:</td>
+                    <td><input type="text" class="form-control-file"/></td>
+                    <td><span style="color: red;">*</span></td>
+                </tr>
+            </table>
+            <table class="t2">
+                <tr style="height:80px">
+                    <td>课程类型:</td>
+                    <td>
+                        <select class="form-control">
+                            <option>—请选择—</option>
+                            <option>课程1</option>
+                            <option>课程2</option>
+                        </select>
+                    </td>
+                    <td><span style="color: red;">*</span></td>
+                </tr>
+            </table>
+            <table class="t3">
+                <tr style="height:80px">
+                    <td>课程描述:</td>
+                    <td>
+                        <textarea rows="6" class="form-control"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <table class="t4">
+                <tr style="height:80px">
+                    <td rowspan="2">课程分数:</td>
+                    <td rowspan="2"><input type="text" class="form-control-file"/></td>
+                </tr>
+            </table>
+            <table class="t5">
+                <tr style="height:80px">
+                    <td>课程图框:</td>
+                    <td><img alt="" src="img/1.png">
+                        <br>
+                        <input type="file"></td>
+                </tr>
+            </table>
+            <table class="t6">
+                <tr style="height:80px">
+                    <td>课程状态:</td>
+                    <td>
+                        <select class="form-control">
+                            <option>开放</option>
+                            <option>关闭</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="保存" class="btn t7" style="color: #117A8B;"/>
+            <input type="submit" value="保存并下一步" id="xiayibu1" class="btn t8" style="color: #117A8B;"/>
+        </div>
+        <div class="tab-pane container" id="menu2">
+            <div class="row">
+                <div class="col-sm-4">
+                    <aside class="d-lg-block d-none">
+                        <button type="button" class="list-group-item list-group-item-action u1">
+                            课程单元列表
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action u1 u2">
+                            单元1：理论篇
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action u1 u2">
+                            单元2：实践篇
+                        </button>
+                    </aside>
+                </div>
+                <div class="col-sm-8 tc">
+                    <table class="t1">
+                        <tr style="height:80px">
+                            <td>单元标题:</td>
+                            <td><input type="text" value="理论篇" class="form-control-file"/></td>
+                            <td><span style="color: red;">*</span></td>
+                        </tr>
+                    </table>
+                    <table class="t3">
+                        <tr style="height:80px">
+                            <td>单元描述:</td>
+                            <td>
+                                <textarea rows="6" class="form-control">游戏化学习思想与理论</textarea>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="t6">
+                        <tr style="height:80px">
+                            <td>单元状态:</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>开放</option>
+                                    <option>关闭</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="t9">
+                        <tr style="height:80px">
+                            <td>截止时间:</td>
+                            <td><input type="text" value="2017-12-01" class="form-control-file"/></td>
+                        </tr>
+                    </table>
+                    <input type="submit" value="保存" class="btn t7" style="color: #117A8B;"/>
+                    <input type="submit" value="保存并下一步" id="xiayibu2" class="btn t8-1" style="color: #117A8B;"/>
+                    <input type="submit" value="删除" class="btn t8-2" style="color: #117A8B;"/>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane container" id="menu3">
+            <div class="row">
+                <div class="col-sm-4">
+                    <aside class="d-lg-block d-none">
+                        <button type="button" class="list-group-item list-group-item-action u1">
+                            课程内容列表
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action u1-1">
+                            <table>
+                                <tr>
+                                    <td>单元:</td>
+                                    <td>
+                                        <select class="form-control">
+                                            <option>理论篇</option>
+                                            <option>XXX</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action u1">
+                            本单元内容
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action u1 u2">
+                            内容1：教学与学习材料的类型
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action u1 u2">
+                            内容2：你使用过的教学与学习材料有哪些
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action u1 u2">
+                            内容3：数字化学习资源的开发方式
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action u1 u2">
+                            内容4：教学与学习材料开发的重要性
+                        </button>
+                    </aside>
+                </div>
+                <div class="col-sm-8 tc">
+                    <h3 class="x1">编辑基本信息</h3>
+                    <table class="t1-1">
+                        <tr style="height:50px">
+                            <td>内容标题:</td>
+                            <td><input type="text" value="游戏化学习相关学习资料" class="form-control-file"/></td>
+                            <td><span style="color: red;">*</span></td>
+                        </tr>
+                    </table>
+                    <table class="t2-1">
+                        <tr height="70px">
+                            <td>内容类型:</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>学习调查</option>
+                                    <option>学习测试</option>
+                                    <option>学习任务</option>
+                                    <option>学习讨论</option>
+                                    <option>学习资料</option>
+                                </select>
+                            </td>
+                            <td><span style="color: red;">*</span></td>
+                        </tr>
+                    </table>
+                    <table class="t4">
+                        <tr style="height:50px">
+                            <td rowspan="2">内容分数:</td>
+                            <td>
+                            <td rowspan="2">
+                                <input type="text" class="form-control-file"/>
+                            </td>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="t6">
+                        <tr style="height:50px">
+                            <td>内容状态:</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>开放</option>
+                                    <option>关闭</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="t3-1">
+                        <tr style="height:50px">
+                            <td>内容描述:</td>
+                            <td>
+                                <textarea rows="6" class="form-control">游戏化学习思想与理论</textarea>
+                            </td>
+                            <td><p style="color: red;">不超过200字符</p></td>
+                        </tr>
+                    </table>
+                    <h3 class="x1">具体信息</h3>
+                    <div>
+                        <p class="x2">发布资源</p><br/>
+                        <p class="x2-1">资源列表：国内十年游戏化学习研究现状与分析_唐丽洁.pdf</p>
+                        <p class="x3"><img alt="" src="img/2.png">&nbsp;<img alt="" src="img/2.png">&nbsp;<img alt=""
+                                                                                                               src="img/2.png">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    let btn_xiayibu1 = document.querySelector('#xiayibu1')
+    let btn_xiayibu2 = document.querySelector('#xiayibu2')
+    let me2 = document.querySelector('#menu2')
+    let me3 = document.querySelector('#menu3')
+
+    let biaoqian = document.querySelector('.nav-tabs').querySelectorAll('.nav-link')
+    let show = document.querySelector('.tab-content').querySelectorAll('.tab-pane')
+
+
+
+    btn_xiayibu1.addEventListener('click', function () {
+        for (let i = 0; i < show.length; i++) {
+            show[i].className = 'tab-pane container tc'
+        }
+        me2.className = 'tab-pane container tc active show'
+
+        for (let i = 0; i < biaoqian.length; i++) {
+            biaoqian[i].className = 'nav-link'
+        }
+        biaoqian[1].className = 'nav-link active show'
+    })
+
+    btn_xiayibu2.addEventListener('click', function () {
+        for (let i = 0; i < show.length; i++) {
+            show[i].className = 'tab-pane container tc'
+        }
+        me3.className = 'tab-pane container tc active show'
+
+        for (let i = 0; i < biaoqian.length; i++) {
+            biaoqian[i].className = 'nav-link'
+        }
+        biaoqian[2].className = 'nav-link active show'
+    })
+
+</script>
+</html>

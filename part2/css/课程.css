@@ -1,8 +1,13 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+}
+
 .table{
 	width: 95%;
 	border-right:2px solid #86CFDA;
 	text-align: center;
-	margin-left: 30xp;
+
 }
 .table-1{
 	width: 95%;
